@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 
 /**
  * @brief The core implementation of the executable
@@ -15,7 +16,7 @@ struct library
   /**
    * @brief Simply initializes the name member to the name of the project
    */
-  library();
-
-  std::string name;
+		std::string name;
+		int ID;
+		library(std::string _name, int _ID);
 };
